@@ -15,6 +15,7 @@ using namespace std;
 int main() {
     initMap();
     string inputFile;
+    cout << "Welcome to csv2latex!\n";
     cout << "Enter CSV filename...\n";
     cin >> inputFile;
 

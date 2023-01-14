@@ -1,0 +1,10 @@
+\begin{displaymath} \begin{array}{| c | c | c | c | c | c |} 
+\hline
+p & q & \neg p & \neg q & (p \land q) & (p \land q) \lor \neg p \lor \neg q\\
+\hline
+T & T & F & F & T & T\\
+T & F & F & T & F & T\\
+F & T & T & F & F & T\\
+F & F & T & T & F & T\\
+\hline
+\end{array} \end{displaymath}
