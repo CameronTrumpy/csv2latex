@@ -1,5 +1,5 @@
 # csv2latex
-csv2latex is a small tool written for use in EECS 203. Writing truth tables in raw latex(even in a latex editor like overleaf) is not a very comfortable process, so this tool allows you to write out your truth table in a spreadsheet application. Exporting your spreadsheet to csv, and then running through the tool will output a txt file with the table formatted in latex.
+csv2latex is a small tool written for use in EECS 203. Writing truth tables in raw latex (even in a latex editor like overleaf) is not a very comfortable process, so this tool allows you to write out your truth table in a spreadsheet application. Exporting your spreadsheet to csv, and then running through the tool will output a txt file with the table formatted in latex.
 
 ## CSV Syntax
 The supported syntax for logical operations in the CSV entries is as follows.
