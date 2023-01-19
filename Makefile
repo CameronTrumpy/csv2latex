@@ -1,24 +1,9 @@
 CXX ?= g++
 CXXFLAGS = --std=c++11 -Wall -Werror -pedantic -g -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG
 
-# Run a regression test
-test: main.exe stats_tests.exe stats_public_test.exe
-	./stats_public_test.exe
-	./stats_tests.exe
-	./main.exe < main_test.in > main_test.out
-	diff main_test.out main_test.out.correct
-
 # Compile the main executable
 main.exe: main.cpp csv2latex.cpp
 	$(CXX) $(CXXFLAGS) main.cpp csv2latex.cpp -o main.exe
-
-# Compile the stats_tests executable
-stats_tests.exe: stats_tests.cpp stats.cpp p1_library.cpp
-	$(CXX) $(CXXFLAGS) stats_tests.cpp stats.cpp p1_library.cpp -o stats_tests.exe
-
-# Compile the stats_public_test executable
-stats_public_test.exe: stats_public_test.cpp stats.cpp p1_library.cpp
-	$(CXX) $(CXXFLAGS) stats_public_test.cpp stats.cpp p1_library.cpp -o stats_public_test.exe
 
 # Remove automatically generated files
 clean :

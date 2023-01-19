@@ -49,6 +49,7 @@ F & F & T & T & F & T\\
 
 ## Execution
 ```console
+$ make main.exe
 $ ./main.exe
 Welcome to csv2latex!
 Enter CSV filename...
